@@ -331,14 +331,14 @@ section .button button:hover{
 }
 
 /* My Services CSS */
-.services .boxes{
+.services .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-.services .boxes .box{
+
+.services .boxes .box {
   margin: 20px 0;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 2 - 20px); /* Adjusted width to accommodate two boxes per row */
   text-align: center;
   border-radius: 12px;
   padding: 30px 10px;
@@ -346,14 +346,15 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+
+.services .boxes .box:hover {
   background: #4070f4;
   color: #fff;
 }
-.services .boxes .box .icon{
+
+.services .boxes .box .icon {
   height: 50px;
   width: 50px;
-  /* background: #4070f4; */
   background: transparent;
   border-radius: 50%;
   text-align: center;
@@ -363,19 +364,23 @@ section .button button:hover{
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+
+.boxes .box:hover .icon {
   background-color: #fff;
   color: #4070f4;
 }
+
 .services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .box:hover p {
   color: #0E2431;
   transition: all 0.4s ease;
 }
+
 .services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .box:hover p {
   color: #fff;
 }
+
 /* Contact Me CSS */
 .contact{
   background: #F0F8FF;
